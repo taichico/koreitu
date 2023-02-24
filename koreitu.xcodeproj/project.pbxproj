@@ -34,6 +34,7 @@
 		CE52A7DA29A8907700F68368 /* DeleteProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A7D929A8907700F68368 /* DeleteProtocol.swift */; };
 		CE52A7DC29A8908B00F68368 /* IdealProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A7DB29A8908B00F68368 /* IdealProtocol.swift */; };
 		CE52A7DE29A8909700F68368 /* ShowDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A7DD29A8909700F68368 /* ShowDataProtocol.swift */; };
+		CE52A82629A89E4C00F68368 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A82529A89E4C00F68368 /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		CE52A7D929A8907700F68368 /* DeleteProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteProtocol.swift; sourceTree = "<group>"; };
 		CE52A7DB29A8908B00F68368 /* IdealProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdealProtocol.swift; sourceTree = "<group>"; };
 		CE52A7DD29A8909700F68368 /* ShowDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDataProtocol.swift; sourceTree = "<group>"; };
+		CE52A82529A89E4C00F68368 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		CE52A77529A612CA00F68368 = {
 			isa = PBXGroup;
 			children = (
+				CE52A82529A89E4C00F68368 /* MainTabBarController.swift */,
 				CE52A78029A612CA00F68368 /* koreitu */,
 				CE52A79729A612CE00F68368 /* koreituTests */,
 				CE52A7A129A612CE00F68368 /* koreituUITests */,
@@ -360,6 +363,7 @@
 				CE52A7B929A853CD00F68368 /* RecordRouter.swift in Sources */,
 				CE52A7CA29A88FEC00F68368 /* IdealPresenter.swift in Sources */,
 				CE52A7DA29A8907700F68368 /* DeleteProtocol.swift in Sources */,
+				CE52A82629A89E4C00F68368 /* MainTabBarController.swift in Sources */,
 				CE52A7CD29A8900400F68368 /* IdealViewController.swift in Sources */,
 				CE52A7D029A8901100F68368 /* IdealRouter.swift in Sources */,
 				CE52A78229A612CA00F68368 /* AppDelegate.swift in Sources */,

@@ -12,18 +12,4 @@ class RecordViewController: UIViewController, RecordViewProtocol {
     @IBAction func hairButtonTapped(_ sender: Any) {
         presenter?.printInfo()
     }
-    @IBAction func recordButtonTapped(_ sender: Any) {
-        presenter?.printInfo()
-    }
-    @IBAction func showDataButtonTapped(_ sender: Any) {
-        presenter?.printInfo()
-    }
-    
-    @IBAction func idealButtonTapped(_ sender: Any) {
-        presenter?.printInfo()
-    }
-    
-    @IBAction func deleteButtonTapped(_ sender: Any) {
-        presenter?.printInfo()
-    }
 }

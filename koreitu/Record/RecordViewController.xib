@@ -39,67 +39,9 @@
                         <action selector="hairButtonTapped:" destination="-1" eventType="touchUpInside" id="KsC-VI-4bK"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYa-5j-P4m">
-                    <rect key="frame" x="0.0" y="809.66666666666663" width="92.333333333333329" height="28.333333333333371"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="記録する">
-                        <fontDescription key="titleFontDescription" type="system" pointSize="0.0"/>
-                    </buttonConfiguration>
-                    <connections>
-                        <action selector="recordButtonTapped:" destination="-1" eventType="touchUpInside" id="eFI-5D-zTS"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BdE-ZE-U1q">
-                    <rect key="frame" x="100.33333333333334" y="809.66666666666663" width="92.333333333333343" height="28.333333333333371"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="データを見る">
-                        <fontDescription key="titleFontDescription" type="system" pointSize="11"/>
-                    </buttonConfiguration>
-                    <connections>
-                        <action selector="showDataButtonTapped:" destination="-1" eventType="touchUpInside" id="f41-fx-gs3"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fx3-Bp-ZW8">
-                    <rect key="frame" x="200.66666666666666" y="809.66666666666663" width="91.999999999999972" height="28.333333333333371"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="理想を決める">
-                        <fontDescription key="titleFontDescription" type="system" pointSize="11"/>
-                    </buttonConfiguration>
-                    <connections>
-                        <action selector="idealButtonTapped:" destination="-1" eventType="touchUpInside" id="2t3-oQ-eZG"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZjU-pf-JlN">
-                    <rect key="frame" x="300.66666666666669" y="809.66666666666663" width="92.333333333333314" height="28.333333333333371"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="データを残す">
-                        <fontDescription key="titleFontDescription" type="system" pointSize="10"/>
-                    </buttonConfiguration>
-                    <connections>
-                        <action selector="deleteButtonTapped:" destination="-1" eventType="touchUpInside" id="hkO-a8-VqS"/>
-                    </connections>
-                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <constraints>
-                <constraint firstItem="gYa-5j-P4m" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1D4-gT-OI6"/>
-                <constraint firstAttribute="bottom" secondItem="gYa-5j-P4m" secondAttribute="bottom" constant="20" id="2Rx-5K-eQH"/>
-                <constraint firstItem="BdE-ZE-U1q" firstAttribute="height" secondItem="gYa-5j-P4m" secondAttribute="height" id="463-dP-8vB"/>
-                <constraint firstItem="Fx3-Bp-ZW8" firstAttribute="centerY" secondItem="gYa-5j-P4m" secondAttribute="centerY" id="DRI-O7-KTK"/>
-                <constraint firstItem="Fx3-Bp-ZW8" firstAttribute="leading" secondItem="BdE-ZE-U1q" secondAttribute="trailing" constant="8" id="E38-UX-WOc"/>
-                <constraint firstItem="ZjU-pf-JlN" firstAttribute="height" secondItem="gYa-5j-P4m" secondAttribute="height" id="GvO-Ea-p2t"/>
-                <constraint firstItem="Fx3-Bp-ZW8" firstAttribute="height" secondItem="gYa-5j-P4m" secondAttribute="height" id="ICb-qL-4NO"/>
-                <constraint firstItem="ZjU-pf-JlN" firstAttribute="centerY" secondItem="gYa-5j-P4m" secondAttribute="centerY" id="JxM-Y6-Ogj"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ZjU-pf-JlN" secondAttribute="trailing" id="Ngm-j8-VTe"/>
-                <constraint firstItem="BdE-ZE-U1q" firstAttribute="centerY" secondItem="gYa-5j-P4m" secondAttribute="centerY" id="Ox2-CF-5Pq"/>
-                <constraint firstItem="ZjU-pf-JlN" firstAttribute="leading" secondItem="Fx3-Bp-ZW8" secondAttribute="trailing" constant="8" id="R1q-6m-Cln"/>
-                <constraint firstItem="BdE-ZE-U1q" firstAttribute="width" secondItem="gYa-5j-P4m" secondAttribute="width" id="Xf6-zv-O5n"/>
-                <constraint firstItem="ZjU-pf-JlN" firstAttribute="width" secondItem="gYa-5j-P4m" secondAttribute="width" id="ios-da-qPZ"/>
-                <constraint firstItem="gYa-5j-P4m" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="20" id="j36-Rb-Kg7"/>
-                <constraint firstItem="Fx3-Bp-ZW8" firstAttribute="width" secondItem="gYa-5j-P4m" secondAttribute="width" id="pEm-vM-kTa"/>
-                <constraint firstItem="BdE-ZE-U1q" firstAttribute="leading" secondItem="gYa-5j-P4m" secondAttribute="trailing" constant="8" id="z4q-KB-1fr"/>
-            </constraints>
             <point key="canvasLocation" x="21" y="20"/>
         </view>
     </objects>
