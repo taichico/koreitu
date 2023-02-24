@@ -35,6 +35,12 @@
 		CE52A7DC29A8908B00F68368 /* IdealProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A7DB29A8908B00F68368 /* IdealProtocol.swift */; };
 		CE52A7DE29A8909700F68368 /* ShowDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A7DD29A8909700F68368 /* ShowDataProtocol.swift */; };
 		CE52A82629A89E4C00F68368 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A82529A89E4C00F68368 /* MainTabBarController.swift */; };
+		CE52A82829A8B09D00F68368 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A82729A8B09D00F68368 /* AppViewController.swift */; };
+		CE52A82B29A8B43A00F68368 /* MainTabPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A82A29A8B43A00F68368 /* MainTabPresenter.swift */; };
+		CE52A82D29A8B44900F68368 /* MainTabRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A82C29A8B44900F68368 /* MainTabRouter.swift */; };
+		CE52A82F29A8B48A00F68368 /* MainTabWireframeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A82E29A8B48A00F68368 /* MainTabWireframeProtocol.swift */; };
+		CE52A83129A8B58800F68368 /* MainTabItemIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A83029A8B58800F68368 /* MainTabItemIndex.swift */; };
+		CE52A83329A8BA7500F68368 /* JALNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A83229A8BA7500F68368 /* JALNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +93,12 @@
 		CE52A7DB29A8908B00F68368 /* IdealProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdealProtocol.swift; sourceTree = "<group>"; };
 		CE52A7DD29A8909700F68368 /* ShowDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDataProtocol.swift; sourceTree = "<group>"; };
 		CE52A82529A89E4C00F68368 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		CE52A82729A8B09D00F68368 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
+		CE52A82A29A8B43A00F68368 /* MainTabPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabPresenter.swift; sourceTree = "<group>"; };
+		CE52A82C29A8B44900F68368 /* MainTabRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabRouter.swift; sourceTree = "<group>"; };
+		CE52A82E29A8B48A00F68368 /* MainTabWireframeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabWireframeProtocol.swift; sourceTree = "<group>"; };
+		CE52A83029A8B58800F68368 /* MainTabItemIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabItemIndex.swift; sourceTree = "<group>"; };
+		CE52A83229A8BA7500F68368 /* JALNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JALNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +129,8 @@
 		CE52A77529A612CA00F68368 = {
 			isa = PBXGroup;
 			children = (
-				CE52A82529A89E4C00F68368 /* MainTabBarController.swift */,
+				CE52A82929A8B42700F68368 /* MainTabBar */,
+				CE52A82729A8B09D00F68368 /* AppViewController.swift */,
 				CE52A78029A612CA00F68368 /* koreitu */,
 				CE52A79729A612CE00F68368 /* koreituTests */,
 				CE52A7A129A612CE00F68368 /* koreituUITests */,
@@ -187,6 +200,7 @@
 				CE52A7D929A8907700F68368 /* DeleteProtocol.swift */,
 				CE52A7DB29A8908B00F68368 /* IdealProtocol.swift */,
 				CE52A7DD29A8909700F68368 /* ShowDataProtocol.swift */,
+				CE52A82E29A8B48A00F68368 /* MainTabWireframeProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -222,6 +236,18 @@
 				CE52A7D729A8905300F68368 /* DeleteRouter.swift */,
 			);
 			path = Delete;
+			sourceTree = "<group>";
+		};
+		CE52A82929A8B42700F68368 /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				CE52A82529A89E4C00F68368 /* MainTabBarController.swift */,
+				CE52A82A29A8B43A00F68368 /* MainTabPresenter.swift */,
+				CE52A82C29A8B44900F68368 /* MainTabRouter.swift */,
+				CE52A83229A8BA7500F68368 /* JALNavigationController.swift */,
+				CE52A83029A8B58800F68368 /* MainTabItemIndex.swift */,
+			);
+			path = MainTabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,11 +389,16 @@
 				CE52A7B929A853CD00F68368 /* RecordRouter.swift in Sources */,
 				CE52A7CA29A88FEC00F68368 /* IdealPresenter.swift in Sources */,
 				CE52A7DA29A8907700F68368 /* DeleteProtocol.swift in Sources */,
+				CE52A82B29A8B43A00F68368 /* MainTabPresenter.swift in Sources */,
+				CE52A82F29A8B48A00F68368 /* MainTabWireframeProtocol.swift in Sources */,
 				CE52A82629A89E4C00F68368 /* MainTabBarController.swift in Sources */,
 				CE52A7CD29A8900400F68368 /* IdealViewController.swift in Sources */,
 				CE52A7D029A8901100F68368 /* IdealRouter.swift in Sources */,
 				CE52A78229A612CA00F68368 /* AppDelegate.swift in Sources */,
 				CE52A78429A612CA00F68368 /* SceneDelegate.swift in Sources */,
+				CE52A83129A8B58800F68368 /* MainTabItemIndex.swift in Sources */,
+				CE52A83329A8BA7500F68368 /* JALNavigationController.swift in Sources */,
+				CE52A82829A8B09D00F68368 /* AppViewController.swift in Sources */,
 				CE52A7BC29A8547B00F68368 /* RecordProtocol.swift in Sources */,
 				CE52A7DE29A8909700F68368 /* ShowDataProtocol.swift in Sources */,
 				CE52A7B729A8534A00F68368 /* RecordPresenter.swift in Sources */,
@@ -375,6 +406,7 @@
 				CE52A7DC29A8908B00F68368 /* IdealProtocol.swift in Sources */,
 				CE52A7C629A88FCF00F68368 /* ShowDataPresenter.swift in Sources */,
 				CE52A7B329A613C700F68368 /* RecordViewController.swift in Sources */,
+				CE52A82D29A8B44900F68368 /* MainTabRouter.swift in Sources */,
 				CE52A7D529A8903100F68368 /* DeleteViewController.swift in Sources */,
 				CE52A7C329A88FB600F68368 /* ShowDataViewController.swift in Sources */,
 			);

@@ -12,4 +12,9 @@ public final class IdealPresenter: IdealPresenterProtocol {
     public func printInfo() {
         print("hogehoge")
     }
+    
+    public func doneButtonTap() {
+        view?.doneButtonTapped()
+        print("ここまで")
+    }
 }
