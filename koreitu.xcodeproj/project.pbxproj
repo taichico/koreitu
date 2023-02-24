@@ -9,13 +9,31 @@
 /* Begin PBXBuildFile section */
 		CE52A78229A612CA00F68368 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A78129A612CA00F68368 /* AppDelegate.swift */; };
 		CE52A78429A612CA00F68368 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A78329A612CA00F68368 /* SceneDelegate.swift */; };
-		CE52A78629A612CA00F68368 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A78529A612CA00F68368 /* ViewController.swift */; };
-		CE52A78929A612CA00F68368 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE52A78729A612CA00F68368 /* Main.storyboard */; };
 		CE52A78B29A612CE00F68368 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE52A78A29A612CE00F68368 /* Assets.xcassets */; };
 		CE52A78E29A612CE00F68368 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE52A78C29A612CE00F68368 /* LaunchScreen.storyboard */; };
 		CE52A79929A612CE00F68368 /* koreituTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A79829A612CE00F68368 /* koreituTests.swift */; };
 		CE52A7A329A612CE00F68368 /* koreituUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A7A229A612CE00F68368 /* koreituUITests.swift */; };
 		CE52A7A529A612CE00F68368 /* koreituUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A7A429A612CE00F68368 /* koreituUITestsLaunchTests.swift */; };
+		CE52A7B329A613C700F68368 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A7B129A613C700F68368 /* RecordViewController.swift */; };
+		CE52A7B429A613C700F68368 /* RecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE52A7B229A613C700F68368 /* RecordViewController.xib */; };
+		CE52A7B729A8534A00F68368 /* RecordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A7B629A8534A00F68368 /* RecordPresenter.swift */; };
+		CE52A7B929A853CD00F68368 /* RecordRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A7B829A853CD00F68368 /* RecordRouter.swift */; };
+		CE52A7BC29A8547B00F68368 /* RecordProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A7BB29A8547B00F68368 /* RecordProtocol.swift */; };
+		CE52A7C329A88FB600F68368 /* ShowDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A7C129A88FB600F68368 /* ShowDataViewController.swift */; };
+		CE52A7C429A88FB600F68368 /* ShowDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE52A7C229A88FB600F68368 /* ShowDataViewController.xib */; };
+		CE52A7C629A88FCF00F68368 /* ShowDataPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A7C529A88FCF00F68368 /* ShowDataPresenter.swift */; };
+		CE52A7C829A88FDC00F68368 /* ShowDataRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A7C729A88FDC00F68368 /* ShowDataRouter.swift */; };
+		CE52A7CA29A88FEC00F68368 /* IdealPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A7C929A88FEC00F68368 /* IdealPresenter.swift */; };
+		CE52A7CD29A8900400F68368 /* IdealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A7CB29A8900400F68368 /* IdealViewController.swift */; };
+		CE52A7CE29A8900400F68368 /* IdealViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE52A7CC29A8900400F68368 /* IdealViewController.xib */; };
+		CE52A7D029A8901100F68368 /* IdealRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A7CF29A8901100F68368 /* IdealRouter.swift */; };
+		CE52A7D229A8901F00F68368 /* DeletePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A7D129A8901F00F68368 /* DeletePresenter.swift */; };
+		CE52A7D529A8903100F68368 /* DeleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A7D329A8903100F68368 /* DeleteViewController.swift */; };
+		CE52A7D629A8903100F68368 /* DeleteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE52A7D429A8903100F68368 /* DeleteViewController.xib */; };
+		CE52A7D829A8905300F68368 /* DeleteRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A7D729A8905300F68368 /* DeleteRouter.swift */; };
+		CE52A7DA29A8907700F68368 /* DeleteProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A7D929A8907700F68368 /* DeleteProtocol.swift */; };
+		CE52A7DC29A8908B00F68368 /* IdealProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A7DB29A8908B00F68368 /* IdealProtocol.swift */; };
+		CE52A7DE29A8909700F68368 /* ShowDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A7DD29A8909700F68368 /* ShowDataProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +57,6 @@
 		CE52A77E29A612CA00F68368 /* koreitu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = koreitu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE52A78129A612CA00F68368 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE52A78329A612CA00F68368 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE52A78529A612CA00F68368 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CE52A78829A612CA00F68368 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE52A78A29A612CE00F68368 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE52A78D29A612CE00F68368 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE52A78F29A612CE00F68368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +65,26 @@
 		CE52A79E29A612CE00F68368 /* koreituUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = koreituUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE52A7A229A612CE00F68368 /* koreituUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = koreituUITests.swift; sourceTree = "<group>"; };
 		CE52A7A429A612CE00F68368 /* koreituUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = koreituUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CE52A7B129A613C700F68368 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		CE52A7B229A613C700F68368 /* RecordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordViewController.xib; sourceTree = "<group>"; };
+		CE52A7B629A8534A00F68368 /* RecordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordPresenter.swift; sourceTree = "<group>"; };
+		CE52A7B829A853CD00F68368 /* RecordRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordRouter.swift; sourceTree = "<group>"; };
+		CE52A7BB29A8547B00F68368 /* RecordProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordProtocol.swift; sourceTree = "<group>"; };
+		CE52A7C129A88FB600F68368 /* ShowDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDataViewController.swift; sourceTree = "<group>"; };
+		CE52A7C229A88FB600F68368 /* ShowDataViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowDataViewController.xib; sourceTree = "<group>"; };
+		CE52A7C529A88FCF00F68368 /* ShowDataPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDataPresenter.swift; sourceTree = "<group>"; };
+		CE52A7C729A88FDC00F68368 /* ShowDataRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDataRouter.swift; sourceTree = "<group>"; };
+		CE52A7C929A88FEC00F68368 /* IdealPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdealPresenter.swift; sourceTree = "<group>"; };
+		CE52A7CB29A8900400F68368 /* IdealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdealViewController.swift; sourceTree = "<group>"; };
+		CE52A7CC29A8900400F68368 /* IdealViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IdealViewController.xib; sourceTree = "<group>"; };
+		CE52A7CF29A8901100F68368 /* IdealRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdealRouter.swift; sourceTree = "<group>"; };
+		CE52A7D129A8901F00F68368 /* DeletePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletePresenter.swift; sourceTree = "<group>"; };
+		CE52A7D329A8903100F68368 /* DeleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteViewController.swift; sourceTree = "<group>"; };
+		CE52A7D429A8903100F68368 /* DeleteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeleteViewController.xib; sourceTree = "<group>"; };
+		CE52A7D729A8905300F68368 /* DeleteRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteRouter.swift; sourceTree = "<group>"; };
+		CE52A7D929A8907700F68368 /* DeleteProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteProtocol.swift; sourceTree = "<group>"; };
+		CE52A7DB29A8908B00F68368 /* IdealProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdealProtocol.swift; sourceTree = "<group>"; };
+		CE52A7DD29A8909700F68368 /* ShowDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDataProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +135,13 @@
 		CE52A78029A612CA00F68368 /* koreitu */ = {
 			isa = PBXGroup;
 			children = (
+				CE52A7C029A88F8600F68368 /* Delete */,
+				CE52A7BF29A88F5C00F68368 /* Ideal */,
+				CE52A7BE29A88F4900F68368 /* ShowData */,
+				CE52A7BA29A853E500F68368 /* Protocols */,
+				CE52A7B529A8532800F68368 /* Record */,
 				CE52A78129A612CA00F68368 /* AppDelegate.swift */,
 				CE52A78329A612CA00F68368 /* SceneDelegate.swift */,
-				CE52A78529A612CA00F68368 /* ViewController.swift */,
-				CE52A78729A612CA00F68368 /* Main.storyboard */,
 				CE52A78A29A612CE00F68368 /* Assets.xcassets */,
 				CE52A78C29A612CE00F68368 /* LaunchScreen.storyboard */,
 				CE52A78F29A612CE00F68368 /* Info.plist */,
@@ -125,6 +164,61 @@
 				CE52A7A429A612CE00F68368 /* koreituUITestsLaunchTests.swift */,
 			);
 			path = koreituUITests;
+			sourceTree = "<group>";
+		};
+		CE52A7B529A8532800F68368 /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				CE52A7B129A613C700F68368 /* RecordViewController.swift */,
+				CE52A7B229A613C700F68368 /* RecordViewController.xib */,
+				CE52A7B629A8534A00F68368 /* RecordPresenter.swift */,
+				CE52A7B829A853CD00F68368 /* RecordRouter.swift */,
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		CE52A7BA29A853E500F68368 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CE52A7BB29A8547B00F68368 /* RecordProtocol.swift */,
+				CE52A7D929A8907700F68368 /* DeleteProtocol.swift */,
+				CE52A7DB29A8908B00F68368 /* IdealProtocol.swift */,
+				CE52A7DD29A8909700F68368 /* ShowDataProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CE52A7BE29A88F4900F68368 /* ShowData */ = {
+			isa = PBXGroup;
+			children = (
+				CE52A7C129A88FB600F68368 /* ShowDataViewController.swift */,
+				CE52A7C229A88FB600F68368 /* ShowDataViewController.xib */,
+				CE52A7C529A88FCF00F68368 /* ShowDataPresenter.swift */,
+				CE52A7C729A88FDC00F68368 /* ShowDataRouter.swift */,
+			);
+			path = ShowData;
+			sourceTree = "<group>";
+		};
+		CE52A7BF29A88F5C00F68368 /* Ideal */ = {
+			isa = PBXGroup;
+			children = (
+				CE52A7C929A88FEC00F68368 /* IdealPresenter.swift */,
+				CE52A7CB29A8900400F68368 /* IdealViewController.swift */,
+				CE52A7CC29A8900400F68368 /* IdealViewController.xib */,
+				CE52A7CF29A8901100F68368 /* IdealRouter.swift */,
+			);
+			path = Ideal;
+			sourceTree = "<group>";
+		};
+		CE52A7C029A88F8600F68368 /* Delete */ = {
+			isa = PBXGroup;
+			children = (
+				CE52A7D129A8901F00F68368 /* DeletePresenter.swift */,
+				CE52A7D329A8903100F68368 /* DeleteViewController.swift */,
+				CE52A7D429A8903100F68368 /* DeleteViewController.xib */,
+				CE52A7D729A8905300F68368 /* DeleteRouter.swift */,
+			);
+			path = Delete;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +325,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE52A7CE29A8900400F68368 /* IdealViewController.xib in Resources */,
 				CE52A78E29A612CE00F68368 /* LaunchScreen.storyboard in Resources */,
+				CE52A7C429A88FB600F68368 /* ShowDataViewController.xib in Resources */,
 				CE52A78B29A612CE00F68368 /* Assets.xcassets in Resources */,
-				CE52A78929A612CA00F68368 /* Main.storyboard in Resources */,
+				CE52A7D629A8903100F68368 /* DeleteViewController.xib in Resources */,
+				CE52A7B429A613C700F68368 /* RecordViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +355,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE52A78629A612CA00F68368 /* ViewController.swift in Sources */,
+				CE52A7C829A88FDC00F68368 /* ShowDataRouter.swift in Sources */,
+				CE52A7D829A8905300F68368 /* DeleteRouter.swift in Sources */,
+				CE52A7B929A853CD00F68368 /* RecordRouter.swift in Sources */,
+				CE52A7CA29A88FEC00F68368 /* IdealPresenter.swift in Sources */,
+				CE52A7DA29A8907700F68368 /* DeleteProtocol.swift in Sources */,
+				CE52A7CD29A8900400F68368 /* IdealViewController.swift in Sources */,
+				CE52A7D029A8901100F68368 /* IdealRouter.swift in Sources */,
 				CE52A78229A612CA00F68368 /* AppDelegate.swift in Sources */,
 				CE52A78429A612CA00F68368 /* SceneDelegate.swift in Sources */,
+				CE52A7BC29A8547B00F68368 /* RecordProtocol.swift in Sources */,
+				CE52A7DE29A8909700F68368 /* ShowDataProtocol.swift in Sources */,
+				CE52A7B729A8534A00F68368 /* RecordPresenter.swift in Sources */,
+				CE52A7D229A8901F00F68368 /* DeletePresenter.swift in Sources */,
+				CE52A7DC29A8908B00F68368 /* IdealProtocol.swift in Sources */,
+				CE52A7C629A88FCF00F68368 /* ShowDataPresenter.swift in Sources */,
+				CE52A7B329A613C700F68368 /* RecordViewController.swift in Sources */,
+				CE52A7D529A8903100F68368 /* DeleteViewController.swift in Sources */,
+				CE52A7C329A88FB600F68368 /* ShowDataViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +409,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CE52A78729A612CA00F68368 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE52A78829A612CA00F68368 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CE52A78C29A612CE00F68368 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -441,7 +545,6 @@
 				INFOPLIST_FILE = koreitu/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -468,7 +571,6 @@
 				INFOPLIST_FILE = koreitu/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

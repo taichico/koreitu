@@ -1,8 +1,13 @@
-//
-//  DeleteProtocol.swift
-//  koreitu
-//
-//  Created by user on 2023/02/24.
-//
-
 import Foundation
+
+public protocol DeleteWireframeProtocol {
+    
+}
+
+public protocol DeletePresenterProtocol {
+    func printInfo()
+}
+
+public protocol DeleteViewProtocol {
+    var presenter: DeletePresenter? { get set }
+}

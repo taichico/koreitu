@@ -1,8 +1,13 @@
-//
-//  RecordProtocol.swift
-//  koreitu
-//
-//  Created by user on 2023/02/24.
-//
-
 import Foundation
+
+public protocol RecordWireframeProtocol {
+    
+}
+
+public protocol RecordPresenterProtocol {
+    func printInfo()
+}
+
+public protocol RecordViewProtocol {
+    var presenter: RecordPresenter? { get set }
+}

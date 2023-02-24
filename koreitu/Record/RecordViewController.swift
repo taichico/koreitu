@@ -1,6 +1,8 @@
 import UIKit
 
-class RecordViewController: UIViewController {
+class RecordViewController: UIViewController, RecordViewProtocol {
+    
+    public var presenter: RecordPresenter?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -8,20 +10,20 @@ class RecordViewController: UIViewController {
     }
 
     @IBAction func hairButtonTapped(_ sender: Any) {
-        print("かみ")
+        presenter?.printInfo()
     }
     @IBAction func recordButtonTapped(_ sender: Any) {
-        print("レコード")
+        presenter?.printInfo()
     }
     @IBAction func showDataButtonTapped(_ sender: Any) {
-        print("レコード")
+        presenter?.printInfo()
     }
     
     @IBAction func idealButtonTapped(_ sender: Any) {
-        print("レコード")
+        presenter?.printInfo()
     }
     
     @IBAction func deleteButtonTapped(_ sender: Any) {
-        print("レコード")
+        presenter?.printInfo()
     }
 }

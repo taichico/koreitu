@@ -1,8 +1,15 @@
-//
-//  DeletePresenter.swift
-//  koreitu
-//
-//  Created by user on 2023/02/24.
-//
-
 import Foundation
+
+public final class DeletePresenter: DeletePresenterProtocol {
+    private var view: DeleteViewProtocol?
+    private let router: DeleteWireframeProtocol
+    
+    public init(interface: DeleteViewProtocol, router: DeleteWireframeProtocol) {
+        self.view = interface
+        self.router = router
+    }
+    
+    public func printInfo() {
+        print("hogehoge")
+    }
+}

@@ -1,8 +1,13 @@
-//
-//  IdealProtocol.swift
-//  koreitu
-//
-//  Created by user on 2023/02/24.
-//
-
 import Foundation
+
+public protocol IdealWireframeProtocol {
+    
+}
+
+public protocol IdealPresenterProtocol {
+    func printInfo()
+}
+
+public protocol IdealViewProtocol {
+    var presenter: IdealPresenter? { get set }
+}

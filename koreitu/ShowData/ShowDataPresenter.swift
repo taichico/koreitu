@@ -1,8 +1,15 @@
-//
-//  ShowDataPresenter.swift
-//  koreitu
-//
-//  Created by user on 2023/02/24.
-//
-
 import Foundation
+
+public final class ShowDataPresenter: ShowDataPresenterProtocol {
+    private var view: ShowDataViewProtocol?
+    private let router: ShowDataWireframeProtocol
+    
+    public init(interface: ShowDataViewProtocol, router: ShowDataWireframeProtocol) {
+        self.view = interface
+        self.router = router
+    }
+    
+    public func printInfo() {
+        print("hogehoge")
+    }
+}
