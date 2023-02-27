@@ -13,13 +13,13 @@ public protocol MainTabWireframeProtocol {
 
 public protocol MainTabPresenterProtocol {
     /// ホーム画面を表示する.
-    func showRecord()
-    /// 予約確認画面を表示する.
-    func showData()
-    /// 空席照会画面を表示する.
-    func showIdeal()
-    /// 運航状況画面を表示する.
-    func showDelete()
+//    func showRecord()
+//    /// 予約確認画面を表示する.
+//    func showData()
+//    /// 空席照会画面を表示する.
+//    func showIdeal()
+//    /// 運航状況画面を表示する.
+//    func showDelete()
 //    func viewDidLoad()
 //    func viewWillAppear(_ animated: Bool)
 //    func viewDidAppear(_ animated: Bool)

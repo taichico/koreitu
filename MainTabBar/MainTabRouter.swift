@@ -41,12 +41,16 @@ public final class MainTabRouter: MainTabWireframeProtocol {
     private func setup(view: MainTabBarController) {
         // 記録
         let recordVC = RecordRouter.createModule()
+        recordVC.tabBarItem = UITabBarItem(title: "記録する", image: .none, tag: 0)
         // データを見る
         let showDataVC = ShowDataRouter.createModule()
+        showDataVC.tabBarItem = UITabBarItem(title: "データを見る", image: .none, tag: 0)
         // 理想
         let idealVC = IdealRouter.createModule()
+        idealVC.tabBarItem = UITabBarItem(title: "周期を決める", image: .none, tag: 0)
         // 削除
         let deleteVC = DeleteRouter.createModule()
+        deleteVC.tabBarItem = UITabBarItem(title: "データの削除", image: .none, tag: 0)
         
         self.recordVC = recordVC
         self.showDataVC = showDataVC
@@ -55,18 +59,16 @@ public final class MainTabRouter: MainTabWireframeProtocol {
         
         let vcs: [UIViewController] = MainTabItemIndex.allCases.map {
             switch $0 {
-                
             case .record:
-                return JALNavigationController(rootViewController: recordVC)
+                return recordVC
             case .showData:
-                return JALNavigationController(rootViewController: showDataVC)
+                return showDataVC
             case .ideal:
-                return JALNavigationController(rootViewController: idealVC)
+                return idealVC
             case .delete:
-                return JALNavigationController(rootViewController: deleteVC)
+                return deleteVC
             }
         }
         view.viewControllers = vcs
     }
-    
 }

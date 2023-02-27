@@ -68,5 +68,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         return vcList
     }
-
 }
