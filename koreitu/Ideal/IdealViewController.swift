@@ -6,8 +6,7 @@ class IdealViewController: UIViewController, IdealViewProtocol {
     @IBOutlet weak var idealTextField: UITextField!
     @IBOutlet weak var periodLabel: UILabel!
     @IBOutlet weak var periodTextField: UITextField!
-    
-    var pickerView: UIPickerView = UIPickerView()
+    var idealPickerView: UIPickerView = UIPickerView()
     
     let dataList = ["髪", "髭", "鼻毛", "爪", "眉毛", "部屋の掃除", "布団", "トイレ掃除"]
     
@@ -16,37 +15,55 @@ class IdealViewController: UIViewController, IdealViewProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        pickerView.delegate = self
-        pickerView.dataSource = self
-        
+        idealPickerView.delegate = self
+        idealPickerView.dataSource = self
+
         setupPicker()
     }
     
     // 決定ボタン押下
-    @objc func done() {
-        presenter?.doneButtonTap()
-        print("done")
+    @objc func idealDone() {
+        presenter?.idealDoneButtonTap()
     }
     
-    func doneButtonTapped() {
+    // 決定ボタン押下
+    @objc func periodDone() {
+        presenter?.periodDoneButtonTap()
+    }
+    
+    func idealDoneButtonTap() {
         idealTextField.endEditing(true)
-        idealTextField.text = "\(dataList[pickerView.selectedRow(inComponent: 0)])"
+        idealTextField.text = "\(dataList[idealPickerView.selectedRow(inComponent: 0)])"
+    }
+    
+    func periodDoneButtonTap() {
+        periodTextField.endEditing(true)
+    }
+    
+    
+    @IBAction func decideButtonAction(_ sender: Any) {
+        presenter?.decideButtonAction()
     }
 }
 
 
 extension IdealViewController: UIPickerViewDelegate, UIPickerViewDataSource {
-    
-
-    
     func setupPicker() {
-        let toolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 35))
-        let spacelItem = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
-        let doneItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(done))
-        toolbar.setItems([spacelItem, doneItem], animated: true)
+        let idealtoolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 35))
+        let idealspacelItem = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
+        let idealdoneItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(idealDone))
+        idealtoolbar.setItems([idealspacelItem, idealdoneItem], animated: true)
         
-        idealTextField.inputView = pickerView
-        idealTextField.inputAccessoryView = toolbar
+        let periodtoolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 35))
+        let periodspacelItem = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
+        let perioddoneItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(periodDone))
+        periodtoolbar.setItems([periodspacelItem, perioddoneItem], animated: true)
+        
+        idealTextField.inputView = idealPickerView
+        idealTextField.inputAccessoryView = idealtoolbar
+        
+        periodTextField.keyboardType = UIKeyboardType.numberPad
+        periodTextField.inputAccessoryView = periodtoolbar
     }
     
     // UIPickerViewの列の数
@@ -67,6 +84,6 @@ extension IdealViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     
     // UIPickerViewのRowが選択された時の挙動
     func pickerView(_ pickerView: UIPickerView,didSelectRow row: Int, inComponent component: Int) {
-        
+    
     }
 }

@@ -8,8 +8,4 @@ public final class ShowDataPresenter: ShowDataPresenterProtocol {
         self.view = interface
         self.router = router
     }
-    
-    public func printInfo() {
-        print("hogehoge")
-    }
 }

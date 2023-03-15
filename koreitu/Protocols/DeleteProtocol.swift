@@ -5,7 +5,7 @@ public protocol DeleteWireframeProtocol {
 }
 
 public protocol DeletePresenterProtocol {
-    func printInfo()
+
 }
 
 public protocol DeleteViewProtocol {

@@ -9,12 +9,14 @@ public final class IdealPresenter: IdealPresenterProtocol {
         self.router = router
     }
     
-    public func printInfo() {
-        print("hogehoge")
+    public func idealDoneButtonTap() {
+        view?.idealDoneButtonTap()
     }
     
-    public func doneButtonTap() {
-        view?.doneButtonTapped()
-        print("ここまで")
+    public func periodDoneButtonTap() {
+        view?.periodDoneButtonTap()
+    }
+    
+    public func decideButtonAction() {
     }
 }

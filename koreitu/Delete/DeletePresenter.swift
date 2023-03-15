@@ -8,8 +8,4 @@ public final class DeletePresenter: DeletePresenterProtocol {
         self.view = interface
         self.router = router
     }
-    
-    public func printInfo() {
-        print("hogehoge")
-    }
 }

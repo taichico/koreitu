@@ -10,7 +10,7 @@ public final class RecordPresenter: RecordPresenterProtocol {
     }
     
     public func printInfo() {
-        print("hogehoge")
+    
     }
     
     

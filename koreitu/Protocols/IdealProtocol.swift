@@ -5,11 +5,14 @@ public protocol IdealWireframeProtocol {
 }
 
 public protocol IdealPresenterProtocol {
-    func printInfo()
-    func doneButtonTap()
+    func idealDoneButtonTap()
+    func periodDoneButtonTap()
+    func decideButtonAction()
 }
 
 public protocol IdealViewProtocol {
     var presenter: IdealPresenter? { get set }
-    func doneButtonTapped()
+    func idealDoneButtonTap()
+    func periodDoneButtonTap()
+//    func decideButtonAction()
 }
