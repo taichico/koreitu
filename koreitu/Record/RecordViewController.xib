@@ -23,7 +23,7 @@
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                     <color key="barTintColor" systemColor="systemYellowColor"/>
                     <items>
-                        <navigationItem title="Title" id="n6h-VM-Uoj"/>
+                        <navigationItem title="記録する" id="n6h-VM-Uoj"/>
                     </items>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="barPosition">
