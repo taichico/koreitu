@@ -7,6 +7,10 @@ class ShowDataViewController: UIViewController, ShowDataViewProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .brown
+     
     }
+    
+    @IBAction func hairButtonTapped(_ sender: Any) {
+    }
+    
 }
