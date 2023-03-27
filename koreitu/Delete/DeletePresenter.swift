@@ -8,4 +8,8 @@ public final class DeletePresenter: DeletePresenterProtocol {
         self.view = interface
         self.router = router
     }
+    
+    public func deleteDoneButtonTap() {
+        view?.deleteDoneButtonTap()
+    }
 }
