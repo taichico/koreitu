@@ -5,9 +5,10 @@ public protocol RecordWireframeProtocol {
 }
 
 public protocol RecordPresenterProtocol {
-
+    func daialog(item: Item)
 }
 
-public protocol RecordViewProtocol {
+ protocol RecordViewProtocol {
     var presenter: RecordPresenter? { get set }
+    func showDaialog(item: Item)
 }

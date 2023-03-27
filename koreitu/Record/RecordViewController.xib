@@ -18,9 +18,8 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VrV-lW-NNU">
+                <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VrV-lW-NNU">
                     <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                     <color key="barTintColor" systemColor="systemYellowColor"/>
                     <items>
                         <navigationItem title="記録する" id="n6h-VM-Uoj"/>
@@ -31,18 +30,120 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </navigationBar>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fzo-c0-X2F">
-                    <rect key="frame" x="159" y="162" width="76" height="35"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fzo-c0-X2F">
+                    <rect key="frame" x="159" y="163" width="164" height="35"/>
+                    <accessibility key="accessibilityConfiguration" identifier="0"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="髪の毛"/>
                     <connections>
                         <action selector="hairButtonTapped:" destination="-1" eventType="touchUpInside" id="KsC-VI-4bK"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iys-wT-p4G">
+                    <rect key="frame" x="159" y="238" width="164" height="35"/>
+                    <accessibility key="accessibilityConfiguration" identifier="1"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="髭を剃る"/>
+                    <connections>
+                        <action selector="beardButtonTapped:" destination="-1" eventType="touchUpInside" id="V2g-hl-TAd"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5a-J9-oaK">
+                    <rect key="frame" x="159" y="323" width="164" height="35"/>
+                    <accessibility key="accessibilityConfiguration" identifier="2"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="鼻毛を切る"/>
+                    <connections>
+                        <action selector="nosehairButtonTappped:" destination="-1" eventType="touchUpInside" id="Z00-gk-Rz4"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZEH-xR-pLl">
+                    <rect key="frame" x="159" y="398" width="164" height="35"/>
+                    <accessibility key="accessibilityConfiguration" identifier="3"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="爪を切る"/>
+                    <connections>
+                        <action selector="nailButtonTapped:" destination="-1" eventType="touchUpInside" id="y5X-Lq-cuC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHR-7B-YDn">
+                    <rect key="frame" x="159" y="473" width="164" height="35"/>
+                    <accessibility key="accessibilityConfiguration" identifier="4"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="眉毛を剃る"/>
+                    <connections>
+                        <action selector="eyebrowsButtonTapped:" destination="-1" eventType="touchUpInside" id="DeO-ai-0hQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yuR-xB-VHb">
+                    <rect key="frame" x="159" y="548" width="164" height="35"/>
+                    <accessibility key="accessibilityConfiguration" identifier="5"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="部屋の掃除をする"/>
+                    <connections>
+                        <action selector="roomCleanButtonTapped:" destination="-1" eventType="touchUpInside" id="lzH-Bh-Ndp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atb-3C-svf">
+                    <rect key="frame" x="159" y="623" width="164" height="35"/>
+                    <accessibility key="accessibilityConfiguration" identifier="6"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="布団を干す"/>
+                    <connections>
+                        <action selector="futonButtonTapped:" destination="-1" eventType="touchUpInside" id="id3-ye-stV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqE-ix-rT7">
+                    <rect key="frame" x="159" y="730" width="164" height="35"/>
+                    <accessibility key="accessibilityConfiguration" identifier="7"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="トイレを掃除する"/>
+                    <connections>
+                        <action selector="toiletButtonTapped:" destination="-1" eventType="touchUpInside" id="FhH-sl-Nio"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="iys-wT-p4G" firstAttribute="height" secondItem="Fzo-c0-X2F" secondAttribute="height" id="0FM-eM-5lO"/>
+                <constraint firstItem="Fzo-c0-X2F" firstAttribute="top" secondItem="VrV-lW-NNU" secondAttribute="bottom" constant="60" id="1d4-Sh-gab"/>
+                <constraint firstItem="nqE-ix-rT7" firstAttribute="width" secondItem="Fzo-c0-X2F" secondAttribute="width" id="5Yi-JR-kLy"/>
+                <constraint firstItem="yuR-xB-VHb" firstAttribute="top" secondItem="eHR-7B-YDn" secondAttribute="bottom" constant="40" id="6RG-Gz-4lc"/>
+                <constraint firstItem="y5a-J9-oaK" firstAttribute="top" secondItem="iys-wT-p4G" secondAttribute="bottom" constant="50" id="72w-SU-1A7"/>
+                <constraint firstItem="atb-3C-svf" firstAttribute="centerX" secondItem="Fzo-c0-X2F" secondAttribute="centerX" id="73Y-Zs-bvM"/>
+                <constraint firstItem="y5a-J9-oaK" firstAttribute="centerX" secondItem="Fzo-c0-X2F" secondAttribute="centerX" id="9tE-ns-qfq"/>
+                <constraint firstItem="iys-wT-p4G" firstAttribute="top" secondItem="Fzo-c0-X2F" secondAttribute="bottom" constant="40" id="CSF-Vs-Z68"/>
+                <constraint firstItem="yuR-xB-VHb" firstAttribute="height" secondItem="Fzo-c0-X2F" secondAttribute="height" id="CVx-De-2Rl"/>
+                <constraint firstItem="atb-3C-svf" firstAttribute="width" secondItem="Fzo-c0-X2F" secondAttribute="width" id="EfV-SM-itu"/>
+                <constraint firstItem="y5a-J9-oaK" firstAttribute="width" secondItem="Fzo-c0-X2F" secondAttribute="width" id="H9e-U6-8YF"/>
+                <constraint firstItem="atb-3C-svf" firstAttribute="height" secondItem="Fzo-c0-X2F" secondAttribute="height" id="HPO-6Z-RqG"/>
+                <constraint firstItem="VrV-lW-NNU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="I4O-Sl-kwE"/>
+                <constraint firstItem="ZEH-xR-pLl" firstAttribute="height" secondItem="Fzo-c0-X2F" secondAttribute="height" id="Kcv-I6-z9h"/>
+                <constraint firstItem="VrV-lW-NNU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="LLz-FM-m2L"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Fzo-c0-X2F" secondAttribute="trailing" constant="159" id="OEm-Lx-FyV"/>
+                <constraint firstItem="Fzo-c0-X2F" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="70" id="OIU-cc-S5F"/>
+                <constraint firstItem="eHR-7B-YDn" firstAttribute="top" secondItem="ZEH-xR-pLl" secondAttribute="bottom" constant="40" id="RYX-qw-J3J"/>
+                <constraint firstItem="ZEH-xR-pLl" firstAttribute="width" secondItem="Fzo-c0-X2F" secondAttribute="width" id="TCA-is-0tT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="nqE-ix-rT7" secondAttribute="bottom" constant="55" id="Trn-zn-fXm"/>
+                <constraint firstItem="iys-wT-p4G" firstAttribute="width" secondItem="Fzo-c0-X2F" secondAttribute="width" id="UIB-RR-XjC"/>
+                <constraint firstItem="nqE-ix-rT7" firstAttribute="centerX" secondItem="Fzo-c0-X2F" secondAttribute="centerX" id="UeO-sP-ipz"/>
+                <constraint firstItem="atb-3C-svf" firstAttribute="top" secondItem="yuR-xB-VHb" secondAttribute="bottom" constant="40" id="VHP-AM-iZM"/>
+                <constraint firstItem="nqE-ix-rT7" firstAttribute="height" secondItem="Fzo-c0-X2F" secondAttribute="height" id="VfH-dk-HNx"/>
+                <constraint firstItem="eHR-7B-YDn" firstAttribute="width" secondItem="Fzo-c0-X2F" secondAttribute="width" id="bOq-KY-NTk"/>
+                <constraint firstItem="VrV-lW-NNU" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="cnJ-IZ-TBp"/>
+                <constraint firstItem="Fzo-c0-X2F" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="159" id="fNr-nU-mBs"/>
+                <constraint firstItem="iys-wT-p4G" firstAttribute="centerX" secondItem="Fzo-c0-X2F" secondAttribute="centerX" id="fvJ-Ch-9RQ"/>
+                <constraint firstItem="nqE-ix-rT7" firstAttribute="top" secondItem="atb-3C-svf" secondAttribute="bottom" constant="40" id="hdT-0z-63t"/>
+                <constraint firstItem="yuR-xB-VHb" firstAttribute="centerX" secondItem="Fzo-c0-X2F" secondAttribute="centerX" id="ieq-cR-DGr"/>
+                <constraint firstItem="yuR-xB-VHb" firstAttribute="width" secondItem="Fzo-c0-X2F" secondAttribute="width" id="iiA-6d-DR4"/>
+                <constraint firstItem="ZEH-xR-pLl" firstAttribute="centerX" secondItem="Fzo-c0-X2F" secondAttribute="centerX" id="msb-qx-10P"/>
+                <constraint firstItem="eHR-7B-YDn" firstAttribute="height" secondItem="Fzo-c0-X2F" secondAttribute="height" id="n11-RV-NVU"/>
+                <constraint firstItem="eHR-7B-YDn" firstAttribute="centerX" secondItem="Fzo-c0-X2F" secondAttribute="centerX" id="nJO-gD-b4V"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Fzo-c0-X2F" secondAttribute="trailing" constant="70" id="nMz-tA-d6m"/>
+                <constraint firstItem="ZEH-xR-pLl" firstAttribute="top" secondItem="y5a-J9-oaK" secondAttribute="bottom" constant="40" id="nay-JH-zZ7"/>
+                <constraint firstItem="y5a-J9-oaK" firstAttribute="height" secondItem="Fzo-c0-X2F" secondAttribute="height" id="uo3-st-B7Z"/>
+            </constraints>
             <point key="canvasLocation" x="21" y="20"/>
         </view>
     </objects>

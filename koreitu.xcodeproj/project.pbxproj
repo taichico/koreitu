@@ -41,6 +41,8 @@
 		CE52A82F29A8B48A00F68368 /* MainTabWireframeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A82E29A8B48A00F68368 /* MainTabWireframeProtocol.swift */; };
 		CE52A83129A8B58800F68368 /* MainTabItemIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A83029A8B58800F68368 /* MainTabItemIndex.swift */; };
 		CE52A83329A8BA7500F68368 /* JALNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A83229A8BA7500F68368 /* JALNavigationController.swift */; };
+		CE9F7DAC29D17F79000AFA5C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F7DAB29D17F79000AFA5C /* Item.swift */; };
+		CE9F7DAF29D180DE000AFA5C /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F7DAE29D180DE000AFA5C /* FileManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +101,8 @@
 		CE52A82E29A8B48A00F68368 /* MainTabWireframeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabWireframeProtocol.swift; sourceTree = "<group>"; };
 		CE52A83029A8B58800F68368 /* MainTabItemIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabItemIndex.swift; sourceTree = "<group>"; };
 		CE52A83229A8BA7500F68368 /* JALNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JALNavigationController.swift; sourceTree = "<group>"; };
+		CE9F7DAB29D17F79000AFA5C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		CE9F7DAE29D180DE000AFA5C /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +155,8 @@
 		CE52A78029A612CA00F68368 /* koreitu */ = {
 			isa = PBXGroup;
 			children = (
+				CE9F7DAD29D180D0000AFA5C /* Extention */,
+				CE9F7DAB29D17F79000AFA5C /* Item.swift */,
 				CE52A7C029A88F8600F68368 /* Delete */,
 				CE52A7BF29A88F5C00F68368 /* Ideal */,
 				CE52A7BE29A88F4900F68368 /* ShowData */,
@@ -248,6 +254,14 @@
 				CE52A83029A8B58800F68368 /* MainTabItemIndex.swift */,
 			);
 			path = MainTabBar;
+			sourceTree = "<group>";
+		};
+		CE9F7DAD29D180D0000AFA5C /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				CE9F7DAE29D180DE000AFA5C /* FileManager.swift */,
+			);
+			path = Extention;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,11 +413,13 @@
 				CE52A83129A8B58800F68368 /* MainTabItemIndex.swift in Sources */,
 				CE52A83329A8BA7500F68368 /* JALNavigationController.swift in Sources */,
 				CE52A82829A8B09D00F68368 /* AppViewController.swift in Sources */,
+				CE9F7DAF29D180DE000AFA5C /* FileManager.swift in Sources */,
 				CE52A7BC29A8547B00F68368 /* RecordProtocol.swift in Sources */,
 				CE52A7DE29A8909700F68368 /* ShowDataProtocol.swift in Sources */,
 				CE52A7B729A8534A00F68368 /* RecordPresenter.swift in Sources */,
 				CE52A7D229A8901F00F68368 /* DeletePresenter.swift in Sources */,
 				CE52A7DC29A8908B00F68368 /* IdealProtocol.swift in Sources */,
+				CE9F7DAC29D17F79000AFA5C /* Item.swift in Sources */,
 				CE52A7C629A88FCF00F68368 /* ShowDataPresenter.swift in Sources */,
 				CE52A7B329A613C700F68368 /* RecordViewController.swift in Sources */,
 				CE52A82D29A8B44900F68368 /* MainTabRouter.swift in Sources */,
