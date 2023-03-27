@@ -1,4 +1,4 @@
-public enum Item: Int {
+public enum Item: Int, CaseIterable {
     case hair
     case beard
     case nosehair
@@ -7,6 +7,27 @@ public enum Item: Int {
     case roomClean
     case futon
     case toilet
+    
+    var name: String {
+        switch self {
+        case .hair:
+            return "髪"
+        case .beard:
+            return "髭"
+        case .nosehair:
+            return "鼻毛"
+        case .nail:
+            return "爪"
+        case .eyebrows:
+            return "眉毛"
+        case .roomClean:
+            return "部屋の掃除"
+        case .futon:
+            return "布団"
+        case .toilet:
+            return "トイレ掃除"
+        }
+    }
     
     var word: String {
         switch self {
@@ -50,4 +71,3 @@ public enum Item: Int {
         }
     }
 }
-

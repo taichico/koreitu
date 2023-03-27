@@ -7,7 +7,6 @@ class DeleteViewController: UIViewController, DeleteViewProtocol {
     @IBOutlet weak var deleteTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
     }
 }

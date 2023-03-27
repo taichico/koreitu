@@ -8,8 +8,6 @@ class IdealViewController: UIViewController, IdealViewProtocol {
     @IBOutlet weak var periodTextField: UITextField!
     var idealPickerView: UIPickerView = UIPickerView()
     
-    let dataList = ["髪", "髭", "鼻毛", "爪", "眉毛", "部屋の掃除", "布団", "トイレ掃除"]
-    
     public var presenter: IdealPresenter?
     
     override func viewDidLoad() {
@@ -33,7 +31,7 @@ class IdealViewController: UIViewController, IdealViewProtocol {
     
     func idealDoneButtonTap() {
         idealTextField.endEditing(true)
-        idealTextField.text = "\(dataList[idealPickerView.selectedRow(inComponent: 0)])"
+        idealTextField.text = Item(rawValue: idealPickerView.selectedRow(inComponent: 0))?.name
     }
     
     func periodDoneButtonTap() {
@@ -73,17 +71,16 @@ extension IdealViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     
     // UIPickerViewの行数、リストの数
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return dataList.count
+        return Item.allCases.count
     }
     
     // UIPickerViewの最初の表示
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        
-        return dataList[row]
+        return Item(rawValue: row)?.name
     }
     
     // UIPickerViewのRowが選択された時の挙動
     func pickerView(_ pickerView: UIPickerView,didSelectRow row: Int, inComponent component: Int) {
-    
+
     }
 }
