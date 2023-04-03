@@ -10,51 +10,32 @@ class RecordViewController: UIViewController, RecordViewProtocol {
     }
 
     @IBAction func hairButtonTapped(_ sender: UIButton) {
-        presenter?.daialog(item: .hair)
-        
+        Common.Utility.showAlert(title: Item(rawValue: 0)?.word, isDestructive: true, completion: nil)
     }
     
     @IBAction func beardButtonTapped(_ sender: UIButton) {
-        presenter?.daialog(item: .beard)
+        Common.Utility.showAlert(title: Item(rawValue: 1)?.word, isDestructive: true, completion: nil)
     }
     
     @IBAction func nosehairButtonTappped(_ sender: UIButton) {
-        presenter?.daialog(item: .nosehair)
+        Common.Utility.showAlert(title: Item(rawValue: 2)?.word, isDestructive: true, completion: nil)
     }
     
     @IBAction func nailButtonTapped(_ sender: UIButton) {
-        presenter?.daialog(item: .nail)
+        Common.Utility.showAlert(title: Item(rawValue: 3)?.word, isDestructive: true, completion: nil)
     }
     
     @IBAction func eyebrowsButtonTapped(_ sender: UIButton) {
-        presenter?.daialog(item: .eyebrows)
+        Common.Utility.showAlert(title: Item(rawValue: 4)?.word, isDestructive: true, completion: nil)
     }
     
     @IBAction func roomCleanButtonTapped(_ sender: UIButton) {
-        presenter?.daialog(item: .roomClean)
+        Common.Utility.showAlert(title: Item(rawValue: 5)?.word, isDestructive: true, completion: nil)
     }
     @IBAction func futonButtonTapped(_ sender: UIButton) {
-        presenter?.daialog(item: .futon)
+        Common.Utility.showAlert(title: Item(rawValue: 6)?.word, isDestructive: true, completion: nil)
     }
     @IBAction func toiletButtonTapped(_ sender: UIButton) {
-        presenter?.daialog(item: .toilet)
-    }
-    
-   public func showDaialog(item: Item) {
-       let alert: UIAlertController = UIAlertController(title: item.word, message:  "", preferredStyle:  UIAlertController.Style.alert)
-        let confirmAction: UIAlertAction = UIAlertAction(title: "確定", style: UIAlertAction.Style.default, handler:{
-            (action: UIAlertAction!) -> Void in
-            FileManager.default.createFile(item: item)
-            FileManager.default.dateAppendText(item: item)
-            print(FileManager.default.readingFile(item: item))
-        })
-        // キャンセルボタンの処理
-        let cancelAction: UIAlertAction = UIAlertAction(title: "キャンセル", style: UIAlertAction.Style.cancel, handler:{
-            (action: UIAlertAction!) -> Void in
-            
-        })
-        alert.addAction(cancelAction)
-        alert.addAction(confirmAction)
-        present(alert, animated: true, completion: nil)
+        Common.Utility.showAlert(title: Item(rawValue: 7)?.word, isDestructive: true, completion: nil)
     }
 }

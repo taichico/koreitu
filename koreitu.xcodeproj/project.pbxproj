@@ -41,6 +41,10 @@
 		CE52A82F29A8B48A00F68368 /* MainTabWireframeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A82E29A8B48A00F68368 /* MainTabWireframeProtocol.swift */; };
 		CE52A83129A8B58800F68368 /* MainTabItemIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A83029A8B58800F68368 /* MainTabItemIndex.swift */; };
 		CE52A83329A8BA7500F68368 /* JALNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52A83229A8BA7500F68368 /* JALNavigationController.swift */; };
+		CE990A4E29D2ECA600A58EFD /* Dialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE990A4D29D2ECA600A58EFD /* Dialog.swift */; };
+		CE990A5029DAC32400A58EFD /* MemoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE990A4F29DAC32400A58EFD /* MemoryManager.swift */; };
+		CE990A5229DAC33E00A58EFD /* MemoryManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE990A5129DAC33E00A58EFD /* MemoryManagerProtocol.swift */; };
+		CE990A5529DAC57700A58EFD /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = CE990A5429DAC57700A58EFD /* KeychainAccess */; };
 		CE9F7DAC29D17F79000AFA5C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F7DAB29D17F79000AFA5C /* Item.swift */; };
 		CE9F7DAF29D180DE000AFA5C /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F7DAE29D180DE000AFA5C /* FileManager.swift */; };
 /* End PBXBuildFile section */
@@ -101,6 +105,9 @@
 		CE52A82E29A8B48A00F68368 /* MainTabWireframeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabWireframeProtocol.swift; sourceTree = "<group>"; };
 		CE52A83029A8B58800F68368 /* MainTabItemIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabItemIndex.swift; sourceTree = "<group>"; };
 		CE52A83229A8BA7500F68368 /* JALNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JALNavigationController.swift; sourceTree = "<group>"; };
+		CE990A4D29D2ECA600A58EFD /* Dialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dialog.swift; sourceTree = "<group>"; };
+		CE990A4F29DAC32400A58EFD /* MemoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryManager.swift; sourceTree = "<group>"; };
+		CE990A5129DAC33E00A58EFD /* MemoryManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryManagerProtocol.swift; sourceTree = "<group>"; };
 		CE9F7DAB29D17F79000AFA5C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		CE9F7DAE29D180DE000AFA5C /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE990A5529DAC57700A58EFD /* KeychainAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +163,8 @@
 		CE52A78029A612CA00F68368 /* koreitu */ = {
 			isa = PBXGroup;
 			children = (
+				CE990A4D29D2ECA600A58EFD /* Dialog.swift */,
+				CE990A4F29DAC32400A58EFD /* MemoryManager.swift */,
 				CE9F7DAD29D180D0000AFA5C /* Extention */,
 				CE9F7DAB29D17F79000AFA5C /* Item.swift */,
 				CE52A7C029A88F8600F68368 /* Delete */,
@@ -207,6 +217,7 @@
 				CE52A7DB29A8908B00F68368 /* IdealProtocol.swift */,
 				CE52A7DD29A8909700F68368 /* ShowDataProtocol.swift */,
 				CE52A82E29A8B48A00F68368 /* MainTabWireframeProtocol.swift */,
+				CE990A5129DAC33E00A58EFD /* MemoryManagerProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -280,6 +291,9 @@
 			dependencies = (
 			);
 			name = koreitu;
+			packageProductDependencies = (
+				CE990A5429DAC57700A58EFD /* KeychainAccess */,
+			);
 			productName = koreitu;
 			productReference = CE52A77E29A612CA00F68368 /* koreitu.app */;
 			productType = "com.apple.product-type.application";
@@ -352,6 +366,9 @@
 				Base,
 			);
 			mainGroup = CE52A77529A612CA00F68368;
+			packageReferences = (
+				CE990A5329DAC57700A58EFD /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+			);
 			productRefGroup = CE52A77F29A612CA00F68368 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -405,10 +422,12 @@
 				CE52A7DA29A8907700F68368 /* DeleteProtocol.swift in Sources */,
 				CE52A82B29A8B43A00F68368 /* MainTabPresenter.swift in Sources */,
 				CE52A82F29A8B48A00F68368 /* MainTabWireframeProtocol.swift in Sources */,
+				CE990A4E29D2ECA600A58EFD /* Dialog.swift in Sources */,
 				CE52A82629A89E4C00F68368 /* MainTabBarController.swift in Sources */,
 				CE52A7CD29A8900400F68368 /* IdealViewController.swift in Sources */,
 				CE52A7D029A8901100F68368 /* IdealRouter.swift in Sources */,
 				CE52A78229A612CA00F68368 /* AppDelegate.swift in Sources */,
+				CE990A5229DAC33E00A58EFD /* MemoryManagerProtocol.swift in Sources */,
 				CE52A78429A612CA00F68368 /* SceneDelegate.swift in Sources */,
 				CE52A83129A8B58800F68368 /* MainTabItemIndex.swift in Sources */,
 				CE52A83329A8BA7500F68368 /* JALNavigationController.swift in Sources */,
@@ -416,6 +435,7 @@
 				CE9F7DAF29D180DE000AFA5C /* FileManager.swift in Sources */,
 				CE52A7BC29A8547B00F68368 /* RecordProtocol.swift in Sources */,
 				CE52A7DE29A8909700F68368 /* ShowDataProtocol.swift in Sources */,
+				CE990A5029DAC32400A58EFD /* MemoryManager.swift in Sources */,
 				CE52A7B729A8534A00F68368 /* RecordPresenter.swift in Sources */,
 				CE52A7D229A8901F00F68368 /* DeletePresenter.swift in Sources */,
 				CE52A7DC29A8908B00F68368 /* IdealProtocol.swift in Sources */,
@@ -750,6 +770,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE990A5329DAC57700A58EFD /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE990A5429DAC57700A58EFD /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE990A5329DAC57700A58EFD /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE52A77629A612CA00F68368 /* Project object */;
 }

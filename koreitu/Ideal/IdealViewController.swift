@@ -17,6 +17,7 @@ class IdealViewController: UIViewController, IdealViewProtocol {
         idealPickerView.dataSource = self
 
         setupPicker()
+        
     }
     
     // 決定ボタン押下
@@ -40,6 +41,8 @@ class IdealViewController: UIViewController, IdealViewProtocol {
     
     
     @IBAction func decideButtonAction(_ sender: Any) {
+//        dialog()
+        Common.Utility.showAlert(title: "", isDestructive: true, completion: nil)
         presenter?.decideButtonAction()
     }
 }
@@ -64,6 +67,22 @@ extension IdealViewController: UIPickerViewDelegate, UIPickerViewDataSource {
         periodTextField.inputAccessoryView = periodtoolbar
     }
     
+    func dialog() {
+            let alert: UIAlertController = UIAlertController(title: "item.word", message:  "", preferredStyle:  UIAlertController.Style.alert)
+             let confirmAction: UIAlertAction = UIAlertAction(title: "確定", style: UIAlertAction.Style.default, handler:{
+                 (action: UIAlertAction!) -> Void in
+                 
+             })
+             // キャンセルボタンの処理
+             let cancelAction: UIAlertAction = UIAlertAction(title: "キャンセル", style: UIAlertAction.Style.cancel, handler:{
+                 (action: UIAlertAction!) -> Void in
+                 
+             })
+             alert.addAction(cancelAction)
+             alert.addAction(confirmAction)
+             present(alert, animated: true, completion: nil)
+    }
+    
     // UIPickerViewの列の数
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -83,4 +102,5 @@ extension IdealViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     func pickerView(_ pickerView: UIPickerView,didSelectRow row: Int, inComponent component: Int) {
 
     }
+    
 }

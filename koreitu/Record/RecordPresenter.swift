@@ -8,8 +8,4 @@ public final class RecordPresenter: RecordPresenterProtocol {
         self.view = interface
         self.router = router
     }
-    
-    public func daialog(item: Item) {
-        view?.showDaialog(item: item)
-    }
 }

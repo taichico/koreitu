@@ -18,5 +18,6 @@ public final class IdealPresenter: IdealPresenterProtocol {
     }
     
     public func decideButtonAction() {
+        
     }
 }
